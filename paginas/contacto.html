@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div> <!--Barra del menu-->
+        <header class="menu">
+            <nav class="menu__nav">
+                <div class="menu__nav_logo">
+                    <img class="menu__logo" src="../img/rise-against-logo-barra.jpg" alt="Rise Against">
+                </div> 
+                <div class="menu__nav__ul">                     
+                    <ul class="menu__ul">
+                        <li class="menu__li"><a class="menu__it" href="../index.html">Home</a></li>
+                        <li class="menu__li"><a class="menu__it" href="./discografia.html">Discografia</a></li>
+                        <li class="menu__li"><a class="menu__it" href="./historia.html">Historia</a></li>
+                        <li class="menu__li"><a class="menu__it" href="./integrantes.html">Integrantes</a></li>
+                        <li class="menu__li"><a class="menu__it" href="./contacto.html">Contacto</a></li> 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="body__contacto">
+    <h1 class="titular">Contactanos</h1>
+    
+    <form action="enviar.php" method="get" enctype="text/plain" class="formulario">
+    <fieldset>
+        <legend>Completa el formulario con tus datos</legend>
+        <div>
+            <label for="nombre-apellido">Nombre y Apellido</label>
+            <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido" required class="text__area">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="email" required class="text__area">
+        </div>
+        <br>
+        <div>
+            <label for="telefono">Telefono</label>
+            <input type="text" id="telefono" placeholder="telefono" required class="text__area">
+        </div>
+        <br>
+        <div>
+            <label for="ciudad">Ciudad </label>
+            <input type="text" id="ciudad" placeholder="ciudad" required class="text__area">
+        </div>
+        <br>
+        <div>
+            <select name="asunto" id="asunto" class="formulario__botones">
+                <option value="0">Asunto:</option>
+                <option value="1">Sugerencia</option>
+                <option value="2">Consulta</option>
+                <option value="3">Critica</option>
+                <option value="3">Elogio</option>
+                <option value="3">Otro</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="mensaje">mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="term" id="term">Acepto recibir informacion sobre las novedades y promociones de Rise Against.
+            <br>
+            <input type="checkbox" name="term" id="term"> Acepto la politica de privacidad.
+        </div>
+        <br>
+        <input type="submit" value="Enviar"  class="formulario__botones">
+        <input type="reset" value="Borrar todo"  class="formulario__botones">
+
+    </fieldset>
+    </form>
+    </div>
+    <footer class="footer">
+        <div class="footer__div">
+            <a href="https://www.facebook.com/riseagainst/" target="_blank" class="footer__link">
+            <img src="../img/logo-facebook-footer.png" alt="facebook rise against" class="footer__img">
+            </a>
+        </div>
+
+        <div class="footer__div">
+        <a href="https://twitter.com/riseagainst?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="footer__link">
+            <img src="../img/logo-twitter-footer.png" alt="twitter rise against" class="footer__img">
+            </a>
+        </div>
+
+        <div class="footer__div">
+            <a href="https://www.instagram.com/riseagainst/?hl=es" target="_blank" class="footer__link">
+            <img src="../img/logo-instagram-footer.png" alt="instagram rise against" class="footer__img">
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
