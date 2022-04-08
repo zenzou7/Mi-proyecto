@@ -203,7 +203,7 @@ html{
     }   
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 720px){
 
     .main__der{
         grid-template-areas: 
@@ -212,18 +212,20 @@ html{
         'tienda';
         grid-template-columns: auto;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 50px;
+        gap: 25px;
         width: 100%;
+        padding: 7px;
     }
 
     .main__izq{
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-top: 10px;
     }
 
     .main__link, .main__img{
-        width: 50%;
+        width: 70%;
         
     }
 
