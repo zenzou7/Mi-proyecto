@@ -5,12 +5,16 @@
 }
 /*index*/
 
+html{
+    font-size: 10px;
+}
+
 .menu{
     background-color: #000000;
     width: 100%;
-    border-bottom: 0.1875em solid #0f0f0f;
+    border-bottom: 0.3rem solid #0f0f0f;
     display: flex;
-    
+    height: 8rem;
 }
 
 .menu__nav{
@@ -25,21 +29,20 @@
     align-items: center;
     grid-template-areas: 'logo ul';
     grid-template-columns: 40% 60%;
-    grid-template-rows: 6.25rem;
+    grid-template-rows: 8rem;
 }
 
 .menu__nav_logo{
     height: 100%;
     width: 100%;
-    padding-left: 5px;
     margin-top: 0px;
     display: flex;
     grid-area: logo;
-    justify-content: center;
+    padding-left: 30px;
 }
 
 .menu__logo{
-    width: 21.875rem;
+    width: auto;
     height: 100%;
     box-sizing: border-box;
 }
@@ -54,13 +57,12 @@
     list-style: none;
     font-family: 'Bebas Neue', cursive;
     color: #000000;
-    font-size: 25px;
+    font-size: 2.5rem;
     display: flex;
-    padding: 0.625em;
     align-items: center;
+    gap: 20px;
 }
 .menu__li{
-    padding: 0.625em;
     text-transform: uppercase;
     width: max-content;
 }
@@ -73,24 +75,18 @@
 .main{
     font-family: 'Bebas Neue', cursive;
     font-weight: bold;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #000000;
     width: 100%;
-    grid-template-areas: 
-    'main__iz main__der'
-    'main__iz main__der'
-    'main__iz main__der'
-    ;
-    grid-template-columns: 45% 55%;
-    grid-template-rows: auto auto auto;
     justify-content: center;
     align-items: center;
 }
 
 .main__izq{
-    width: 100%;
+    width: 45%;
     display: flex;
-    padding: 1.25em;
+    padding: 15px;
     grid-area: main__iz;
     justify-content: center;
     align-items: center;
@@ -110,17 +106,18 @@
     grid-area: main__der;
     display: grid;
     flex-wrap: wrap;
-    width: 100%;
+    width: 55%;
     height: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 2rem;
     grid-template-areas: 
     'titulo'
     'iframe'
     'tienda';
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 150px;
 }
 
 .main__der1, .main__der2, .main__der3{
@@ -133,7 +130,7 @@
 }
 
 .main__titular{
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: #474545;
     box-sizing: border-box;
     grid-area: titulo;
@@ -142,28 +139,29 @@
 
 .main__iframe{
     width: 80%;
-    height: 80px;
+    height: 8rem;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: 2rem;
     box-sizing: border-box;
     grid-area: iframe;
 }
 
 .main__tienda{
     color: #3f3d3d;
-    font-size: 1em;
+    font-size: 2rem;
     width: 100%;
     box-sizing: border-box;
     background-color: #000000;
     grid-area: tienda;
+    text-decoration: none;
 }
 
 .footer{
     display: flex;
     background-color: #303030;
-    height: 60px;
+    height: 6rem;
     width: 100%;
-    gap: 1.875rem;
+    gap: 2.5rem;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -189,16 +187,34 @@
 
 
 @media screen and (max-width: 980px) {
+    .menu__nav_logo{
+        justify-content: center;
+    }
+
+    .menu{
+        height: 160px;
+    }
     .menu__nav{
         grid-template-areas: 
         'logo'
         'ul';
         grid-template-columns: 100%;
-        grid-template-rows: 100px 100px;
+        grid-template-rows: 80px 80px;
     }   
 }
 
 @media screen and (max-width: 768px){
+
+    .main__der{
+        grid-template-areas: 
+        'titulo'
+        'iframe'
+        'tienda';
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 50px;
+        width: 100%;
+    }
 
     .main__izq{
         justify-content: center;
@@ -215,27 +231,23 @@
         width: 100%;
     }
 
-    .main{
-        grid-template-areas: 
-        'main__iz'
-        'main__iz'
-        'main__iz'
-        'main__der'
-        'main__der'
-        'main__der';
-        grid-template-columns: 100%;
-        grid-template-rows: .5fr .5fr .5fr auto auto auto;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 @media screen and (max-width: 576px) {
         
-    body{
+    html{
         font-size: 12px;
     }
 
+    .main__izq{
+        width: 100%;
+        padding: 25px;
+    }
+
+    .main__der{
+        gap: 20px;
+        padding: 3px;
+    }   
 }
 
 /*fin index*/
