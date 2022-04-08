@@ -15,6 +15,7 @@ html{
     border-bottom: 0.3rem solid #0f0f0f;
     display: flex;
     height: 8rem;
+    overflow: hidden;
 }
 
 .menu__nav{
