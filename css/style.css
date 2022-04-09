@@ -118,7 +118,7 @@ html{
     'tienda';
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 150px;
+    gap: 10rem;
 }
 
 .main__der1, .main__der2, .main__der3{
@@ -146,7 +146,6 @@ html{
     box-sizing: border-box;
     grid-area: iframe;
 }
-
 .main__tienda{
     color: #3f3d3d;
     font-size: 2rem;
@@ -155,6 +154,43 @@ html{
     background-color: #000000;
     grid-area: tienda;
     text-decoration: none;
+}
+
+.boton{
+    display: inline-flex;
+    width: fit-content;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition:  .3s ease all;
+    border-radius: 5px;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.boton span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 31px);
+    border-bottom: 40px solid gray;
+    border-right: 31px solid transparent;
+    transition: .4s ease-in-out all;
+}
+
+.boton:hover::after{
+    left: 0;
 }
 
 .footer{
@@ -188,6 +224,11 @@ html{
 
 
 @media screen and (max-width: 980px) {
+
+    .main__der{
+        gap: 60px;
+    }
+
     .menu__nav_logo{
         justify-content: center;
     }
@@ -299,14 +340,14 @@ html{
 }
 
 .playlists__album__nombre{
-    font-size: 1.5em;
+    font-size: 3rem;
     text-align: center;
     justify-content: center;
 }
 
 .playlists__iframe{
     width: 100%;
-    height: 23.75em;
+    height: 20rem;
     box-sizing: border-box;
 }
 
@@ -324,18 +365,32 @@ html{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 720px){
 
     .playlists{
-        font-size: 20px;
+        grid-template-areas: 
+        'play'
+        'play'
+        'play'
+        'play'        
+        'play'
+        'play'
+        'play'
+        'play';
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 25px;
     }
 
+    .playlists__album{
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 576px) {
         
     .playlists{
-        font-size: 12px;
+        font-size: 10px;
     }
 
 }
@@ -440,7 +495,7 @@ html{
     width: 100%;
     background-color: #000000;
     font-family: 'Bebas Neue', cursive;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .miembros__titular{
@@ -478,22 +533,28 @@ html{
     padding: 1px;
 }
 
+.contenedor__miembros{
+    height: 48rem;
+    display: inline-block;
+}
+
 .miembros__tim, .miembros__zach, .miembros__joe, .miembros__brandon{
-    font-size: 1.25em;
+    font-size: 2rem;
     padding: 1.25rem;
+    overflow: hidden;
 }
 
 #tim, #zach, #joe, #brandon{
-    font-size: 2em;
+    font-size: 3rem;
 }
 
 .foto__miembro{
-    width: 12.5em;
+    width: 25rem;
 }
 
-@media screen and (max-width: 980px) {
-    .miembros{
-        font-size: 12px;
+@media screen and (max-width: 720px) {
+    html{
+        font-size: 10px;
     }
 }
 
