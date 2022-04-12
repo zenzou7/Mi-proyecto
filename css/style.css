@@ -165,7 +165,7 @@ html{
 
 @media screen and (max-width:768px) {
     a{
-        width: 50%;
+        width: 80%;
     }
     .main__der{
         height: 400px;
