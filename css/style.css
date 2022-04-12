@@ -11,89 +11,32 @@ html{
 
 .menu{
     background-color: #000000;
-    width: 100%;
-    border-bottom: 0.3rem solid #0f0f0f;
-    display: flex;
-    height: 8rem;
-    overflow: hidden;
+    border-bottom: #5c5c5c solid 3px;
 }
 
-.menu__nav{
-    display: grid;
-    justify-content: space-between;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    margin-top: 0px;
-    align-items: center;
-    display: grid;
-    align-items: center;
-    grid-template-areas: 'logo ul';
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 8rem;
+.navbar-dark .navbar-nav .nav-link{
+    color: #dadada;
+    margin: 0px 10px;
 }
 
-.menu__nav_logo{
-    height: 100%;
-    width: 100%;
-    margin-top: 0px;
-    display: flex;
-    grid-area: logo;
-    padding-left: 30px;
-}
-
-.menu__logo{
-    width: auto;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.menu__nav__ul{
-    display: flex;
-    justify-content: center;
-    grid-area: ul;
-}
-
-.menu__ul{
-    list-style: none;
-    font-family: 'Bebas Neue', cursive;
-    color: #000000;
+.navbar, .container-fluid{
     font-size: 2.5rem;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.menu__li{
-    text-transform: uppercase;
-    width: max-content;
 }
 
-.menu__it{
-    text-decoration: none;
-    color: #4b4848;
+.navbar-brand img{
+     height: 8rem;
 }
 
-.main{
-    font-family: 'Bebas Neue', cursive;
-    font-weight: bold;
-    display: flex;
-    flex-wrap: wrap;
+.navbar-collapse{
+    justify-content: end;
+}
+
+.container-fluid{
     background-color: #000000;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
 }
-
-.main__izq{
-    width: 45%;
-    display: flex;
-    padding: 15px;
-    grid-area: main__iz;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+.row{
+    font-size: 4rem;
 }
-
 .main__img{
     align-items: center;
     justify-content: center;
@@ -101,59 +44,56 @@ html{
     border-radius: 10px;
     border-color: #5e5e5e;
     width: 100%;
+    margin: 0px;
 }
-
-.main__der{
-    grid-area: main__der;
-    display: grid;
-    flex-wrap: wrap;
-    width: 55%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    grid-template-areas: 
-    'titulo'
-    'iframe'
-    'tienda';
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10rem;
-}
-
-.main__der1, .main__der2, .main__der3{
+.main__izq{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-sizing: border-box;
 }
-
+.main__der{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main__der1, .main__der2, .main__der3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 33.33%;
+}
 .main__titular{
     font-size: 3.5rem;
-    color: #474545;
+    color: #dadada;
     box-sizing: border-box;
     grid-area: titulo;
     
 }
-
 .main__iframe{
-    width: 80%;
+    width: 70%;
     height: 8rem;
     border-style: solid;
     border-radius: 2rem;
     box-sizing: border-box;
-    grid-area: iframe;
 }
 .main__tienda{
-    color: #3f3d3d;
+    color: #dadada;
     font-size: 2rem;
     width: 100%;
     box-sizing: border-box;
     background-color: #000000;
     grid-area: tienda;
     text-decoration: none;
+    align-items: center;
+}
+
+.main__tienda h2{
+    margin: 0;
+    font-size: 2rem;
 }
 
 .boton{
@@ -166,6 +106,7 @@ html{
     transition:  .3s ease all;
     border-radius: 5px;
     align-content: center;
+    text-align:center;
     justify-content: center;
     position: relative;
     overflow: hidden;
@@ -174,24 +115,25 @@ html{
 .boton span{
     position: relative;
     z-index: 2;
-    transition: .3s ease all;
+    transition: .5s ease all;
 }
 
 .boton::after{
     content: "";
-    width: 100%;
+    width: 110%;
     position: absolute;
     z-index: 1;
     top: 0;
-    left: calc(-100% - 31px);
-    border-bottom: 40px solid gray;
-    border-right: 31px solid transparent;
-    transition: .4s ease-in-out all;
+    left: calc(-100% - 35px);
+    border-bottom: 35px solid gray;
+    border-right: 20px solid transparent;
+    transition: .6s ease-in-out all;
 }
 
 .boton:hover::after{
     left: 0;
 }
+
 
 .footer{
     display: flex;
@@ -221,79 +163,17 @@ html{
     height: 40px;
 }
 
-
-
-@media screen and (max-width: 980px) {
-
+@media screen and (max-width:768px) {
+    a{
+        width: 50%;
+    }
     .main__der{
-        gap: 60px;
+        height: 400px;
     }
-
-    .menu__nav_logo{
-        justify-content: center;
+    .main__tienda h2{
+        font-size: 3rem;
     }
-
-    .menu{
-        height: 160px;
-    }
-    .menu__nav{
-        grid-template-areas: 
-        'logo'
-        'ul';
-        grid-template-columns: 100%;
-        grid-template-rows: 80px 80px;
-    }   
 }
-
-@media screen and (max-width: 720px){
-
-    .main__der{
-        grid-template-areas: 
-        'titulo'
-        'iframe'
-        'tienda';
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 25px;
-        width: 100%;
-        padding: 7px;
-    }
-
-    .main__izq{
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .main__link, .main__img{
-        width: 70%;
-        
-    }
-
-    .main__img{
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 576px) {
-        
-    html{
-        font-size: 12px;
-    }
-
-    .main__izq{
-        width: 100%;
-        padding: 25px;
-    }
-
-    .main__der{
-        gap: 20px;
-        padding: 3px;
-    }   
-}
-
 /*fin index*/
 
 /*discografia*/
@@ -303,7 +183,7 @@ html{
     width: 100%;
     background-color: #000000;
     font-family: 'Bebas Neue', cursive;    
-    color: #474545;
+    color: #dadada;
     font-size: 25px;
     text-align: center;
     display: grid;
@@ -319,8 +199,8 @@ html{
 }
 
 .playlists__titular{
-    font-size: 3em;
-    color: #474545;
+    font-size: 4rem;
+    color: #dadada;
     background-color: #000000;
     display: flex;
     width: 100%;
@@ -328,6 +208,7 @@ html{
     padding-bottom: .5em;
     justify-content: center;
     text-align: center;
+    margin: 0;
 }
 
 
@@ -403,19 +284,21 @@ html{
     width: 100%;
     background-color: #5c5c5c;
     font-family: 'Bebas Neue', cursive;    
-    color: #1b1b1b;
+    color: #dadada;
     font-size: 50px;
 }
 
 .historia__titular{
+    color: #dadada;
     background-color: #5c5c5c;
     display: flex;
     width: 100%;
     padding: .6em;
     justify-content: center;
     text-align: center;
-    font-size: 3.125rem;
+    font-size: 4.5rem;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .historia__banda{
@@ -499,7 +382,7 @@ html{
 }
 
 .miembros__titular{
-    color: #4b4848;
+    color: #dadada;
     font-size: 2.6em;
     display: flex;
     width: 100%;
