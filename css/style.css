@@ -150,17 +150,9 @@ html{
     overflow: hidden;
 }
 
-.footer__div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    box-sizing: border-box;
-}
-
-.footer__img, .footer__link{
-    width: 40px;
-    height: 40px;
+.footer_link ,.bi .bi-facebook, .bi .bi-twitter, .bi .bi-instagram{
+    color: #dadada;
+    width: 3rem;
 }
 
 @media screen and (max-width:768px) {
@@ -460,15 +452,6 @@ html{
     font-size: 25px;
 }
 
-.formulario__botones{
-    font-size: 20px;
-}
-
-.text__area{
-    font-size: 25px;
-    padding: 2px;
-}
-
 .titular{
     display: flex;
     width: 100%;
@@ -477,4 +460,25 @@ html{
     padding: 20px;
 }
 
+.legend{
+    font-size: 3rem;
+}
+
+.form-label{
+    font-size: 2.5rem;
+}
+
+.formulario__botones{
+    font-size: 2rem;
+}
+
+.text__area{
+    font-size: 25px;
+    padding: 2px;
+}
+
+.form-check{
+    font-size: 2rem;
+    padding-left: 0;
+}
 /* fin contacto*/
