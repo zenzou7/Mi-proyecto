@@ -427,9 +427,19 @@ html{
     width: 25rem;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     html{
-        font-size: 10px;
+        font-size: .5rem;
+    }
+    .miembros__it{
+        color: #dadada;
+        background-color: #4b4848;
+        text-align: center;
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .miembros__list__li{
+        justify-content: flex-start;
     }
 }
 
