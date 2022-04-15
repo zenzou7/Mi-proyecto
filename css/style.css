@@ -112,6 +112,11 @@ html{
     overflow: hidden;
 }
 
+.boton a{
+    text-decoration: none;
+    color: #dadada;
+}
+
 .boton span{
     position: relative;
     z-index: 2;
@@ -180,12 +185,13 @@ html{
     text-align: center;
     display: grid;
     grid-template-areas: 
+    'titular titular titular'
     'play play play'
     'play play play'
     'play play play'
     'play play play';
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
     box-sizing: border-box;
     
 }
@@ -201,6 +207,7 @@ html{
     justify-content: center;
     text-align: center;
     margin: 0;
+    grid-area: titular;
 }
 
 
@@ -212,7 +219,7 @@ html{
     justify-content: center;
 }
 
-.playlists__album__nombre{
+.playlists__album__nombre .animate__animated .animate__zoomIn{
     font-size: 3rem;
     text-align: center;
     justify-content: center;
@@ -228,12 +235,13 @@ html{
     .playlists{
         font-size: 25px;
         grid-template-areas: 
+        'titular titular'
         'play play'
         'play play'
         'play play'
         'play play';
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
         box-sizing: border-box; 
     }
 }
@@ -242,6 +250,7 @@ html{
 
     .playlists{
         grid-template-areas: 
+        'titular'
         'play'
         'play'
         'play'
@@ -251,7 +260,7 @@ html{
         'play'
         'play';
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 25px;
     }
 
