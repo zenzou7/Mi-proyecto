@@ -70,7 +70,6 @@ html{
     font-size: 3.5rem;
     color: #dadada;
     box-sizing: border-box;
-    grid-area: titulo;
     
 }
 .main__iframe{
@@ -79,21 +78,6 @@ html{
     border-style: solid;
     border-radius: 2rem;
     box-sizing: border-box;
-}
-.main__tienda{
-    color: #dadada;
-    font-size: 2rem;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #000000;
-    grid-area: tienda;
-    text-decoration: none;
-    align-items: center;
-}
-
-.main__tienda h2{
-    margin: 0;
-    font-size: 2rem;
 }
 
 .boton{
@@ -112,10 +96,6 @@ html{
     overflow: hidden;
 }
 
-.boton a{
-    text-decoration: none;
-    color: #dadada;
-}
 
 .boton span{
     position: relative;
@@ -139,6 +119,21 @@ html{
     left: 0;
 }
 
+.boton .main__tienda{
+    color: #dadada;
+    font-size: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000000;
+    text-decoration: none;
+    align-items: center;
+}
+
+.main__tienda h2{
+    margin: 0;
+    font-size: 2rem;
+}
+
 
 .footer{
     display: flex;
@@ -149,7 +144,6 @@ html{
     justify-content: center;
     text-align: center;
     align-items: center;
-    grid-area: footer;
     box-sizing: border-box;
     padding: 2px;
     overflow: hidden;
@@ -161,7 +155,7 @@ html{
 }
 
 @media screen and (max-width:768px) {
-    a{
+    .main__tienda{
         width: 80%;
     }
     .main__der{

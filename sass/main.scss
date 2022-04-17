@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    font-family: 'Bebas Neue', cursive;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+@import 'header';
+@import 'footer';
+@import 'index';
