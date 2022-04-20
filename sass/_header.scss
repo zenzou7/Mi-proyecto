@@ -4,8 +4,6 @@
     background-color: #000000;
     border-bottom: #5c5c5c solid 3px;
     & .navbar{
-        color: #dadada;
-        margin: 0px 10px;
         & .container-fluid{
             font-size: 2.5rem;
             .navbar-brand img{
@@ -13,6 +11,15 @@
             }
             .navbar-collapse{
                 justify-content: end;
+            }
+        }
+        & .navbar-collapse{
+            justify-content: end;
+            .navbar-nav{
+                .nav-item{
+                    color: #dadada;
+                    margin: 0px 10px;
+                }
             }
         }
     }
