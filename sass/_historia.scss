@@ -87,15 +87,23 @@
 }
 
 @media screen and (max-width: 832px){
-    .historia__banda__tablas{
-        grid-template-areas: 
-        'tabla1'
-        'tabla2';
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        padding: 30px;
-        gap: 40px;
-    }
+    .historia{
+        .historia__banda{
+            details{
+                .historia__titulo__articulo{
+                }
+            }
+        }
+            .historia__banda__tablas{
+                grid-template-areas: 
+                'tabla1'
+                'tabla2';
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+                padding: 30px;
+                gap: 40px;
+        }  
+    }       
 
 }
 

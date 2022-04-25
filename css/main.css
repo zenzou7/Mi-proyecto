@@ -359,7 +359,7 @@ html {
 }
 
 @media screen and (max-width: 832px) {
-  .historia__banda__tablas {
+  .historia .historia__banda__tablas {
     grid-template-areas: 'tabla1' 'tabla2';
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -469,7 +469,7 @@ html {
   font-size: 3rem;
 }
 
-.contenedor__miembros .miembros__tim details #tim .foto__miembro, .contenedor__miembros .miembros__tim #zach .foto__miembro, .contenedor__miembros .miembros__tim #joe .foto__miembro, .contenedor__miembros .miembros__tim #brandon .foto__miembro, .contenedor__miembros .miembros__zach details #tim .foto__miembro, .contenedor__miembros .miembros__zach #zach .foto__miembro, .contenedor__miembros .miembros__zach #joe .foto__miembro, .contenedor__miembros .miembros__zach #brandon .foto__miembro, .contenedor__miembros .miembros__joe details #tim .foto__miembro, .contenedor__miembros .miembros__joe #zach .foto__miembro, .contenedor__miembros .miembros__joe #joe .foto__miembro, .contenedor__miembros .miembros__joe #brandon .foto__miembro, .contenedor__miembros .miembros__brandon details #tim .foto__miembro, .contenedor__miembros .miembros__brandon #zach .foto__miembro, .contenedor__miembros .miembros__brandon #joe .foto__miembro, .contenedor__miembros .miembros__brandon #brandon .foto__miembro {
+.contenedor__miembros .miembros__tim .foto__miembro, .contenedor__miembros .miembros__zach .foto__miembro, .contenedor__miembros .miembros__joe .foto__miembro, .contenedor__miembros .miembros__brandon .foto__miembro {
   width: 25rem;
 }
 
