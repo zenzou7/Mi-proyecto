@@ -2,7 +2,7 @@
 
 .menu{    
     background-color: #000000;
-    border-bottom: #5c5c5c solid 3px;
+    border-bottom: map-get($map:$paleta , $key: secundario ) solid 3px;
     & .navbar{
         & .container-fluid{
             font-size: 2.5rem;
@@ -17,7 +17,7 @@
             justify-content: end;
             .navbar-nav{
                 .nav-item{
-                    color: #dadada;
+                    color: map-get($map:$paleta , $key:primario);
                     margin: 0px 10px;
                 }
             }

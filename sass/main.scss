@@ -5,7 +5,12 @@
 }
 html{
     font-size: 10px;
-}
+} 
+@import 'map';
 @import 'header';
 @import 'footer';
 @import 'index';
+@import 'discografia';
+@import 'historia';
+@import 'integrantes';
+@import 'contacto';

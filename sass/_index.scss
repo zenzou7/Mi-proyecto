@@ -1,7 +1,7 @@
 /*INDEX*/
 
 .container-fluid{
-    background-color: #000000;
+    background-color: map-get($map:$paleta, $key:black);;
     .row{
         font-size: 4rem;
         .main__izq{
@@ -16,7 +16,7 @@
                 justify-content: center;
                 border-style: solid;
                 border-radius: 10px;
-                border-color: #5e5e5e;
+                border-color: map-get($map:$paleta, $key:secundario);
                 width: 100%;
                 margin: 0px;
             }
@@ -33,7 +33,7 @@
                 height: 33.33%;
                 .main__titular{
                     font-size: 3.5rem;
-                    color: #dadada;
+                    color: map-get($map:$paleta , $key:primario);
                     box-sizing: border-box;
                 }
             }
@@ -60,7 +60,7 @@
                 .boton{
                     display: inline-flex;
                     width: fit-content;
-                    background-color: #000000;
+                    background-color: map-get($map:$paleta , $key:black);
                     border: none;
                     cursor: pointer;
                     text-transform: uppercase;
@@ -91,11 +91,11 @@
                         left: 0;
                     }
                     .main__tienda{
-                        color: #dadada;
+                        color: map-get($map:$paleta, $key:primario);
                         font-size: 2rem;
                         width: 100%;
                         box-sizing: border-box;
-                        background-color: #000000;
+                        background-color: map-get($map:$paleta, $key:black);
                         text-decoration: none;
                         align-items: center;
                         .main__tienda h2{

@@ -1,0 +1,101 @@
+/*DISCOGRAFIA*/
+
+.playlists{
+    width: 100%;
+    background-color: #000000;
+    font-family: 'Bebas Neue', cursive;    
+    color: map-get($map:$paleta , $key:primario);
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    'titular titular titular'
+    'play play play'
+    'play play play'
+    'play play play'
+    'play play play';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+
+    & .playlists__titular{
+        grid-area: titular;
+        display: flex;
+        font-size: 4rem;
+        color:  map-get($map:$paleta , $key:primario);
+        background-color: #000000;
+        width: 100%;  
+        padding-top: .5em; 
+        padding-bottom: .5em;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    & .playlists__album .animate__animated .animate__zoomIn{
+        grid-area: play;
+        padding: 0.625em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        & .playlists_album_nombre{
+            font-size: 3rem;
+            text-align: center;
+            justify-content: center;
+        }
+
+        & .playlists_iframe{
+            width: 100%; 
+            height: 20rem;
+            box-sizing: border-box;
+        }
+    }
+}
+@media screen and (max-width: 980px) {
+    .playlists{
+        font-size: 25px;
+        grid-template-areas: 
+        'titular titular'
+        'play play'
+        'play play'
+        'play play'
+        'play play';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
+        box-sizing: border-box; 
+    }
+}
+
+@media screen and (max-width: 720px){
+
+    .playlists{
+        grid-template-areas: 
+        'titular'
+        'play'
+        'play'
+        'play'
+        'play'        
+        'play'
+        'play'
+        'play'
+        'play';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 25px;
+    }
+
+    .playlists__album{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+        
+    .playlists{
+        font-size: 10px;
+    }
+
+}
+/*FIN DISCOGRAFIA*/

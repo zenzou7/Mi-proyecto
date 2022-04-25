@@ -13,7 +13,7 @@
     padding: 2px;
     overflow: hidden;
     & .footer_link, .bi .bi-facebook, .bi .bi-twitter, .bi .bi-instagram{
-        color: #dadada;
+        color: map-get($map:$paleta , $key:primario);
         width: 3rem;
     }
 }
