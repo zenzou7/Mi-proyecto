@@ -43,51 +43,10 @@
 }
 
 .contenedor__miembros{
-    .miembros{
-    width: 100%;
-    background-color: map-get($map:$paleta , $key:black);
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.5rem;
-
-    .miembros__titular{
-        color: map-get($map:$paleta , $key:primario);
-        font-size: 2.6em;
-        display: flex;
-        width: 100%;
-        height: 20%;
-        text-align: center;
-        justify-content: center;
-        padding-top: 1.25rem;
-    }
-
-    .miembros__list{
-        font-size: 1.5625em;
-        display: inline;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-
-        .miembros__list__li{
-            display: flex;
-            width: 100%;
-            background-color: map-get($map:$paleta , $key:secundario);
-            color: map-get($map:$paleta , $key:black);
-            justify-content: center;
-
-            .miembros__it{
-                text-decoration: none;
-                color: map-get($map:$paleta , $key:black);
-                background-color: map-get($map:$paleta , $key:primario);
-                border-radius: 5px;
-                padding: 1px;
-            }
-        }
-    }
-}
     height: 70rem;
     display: inline-block;
 
-    .miembros__tim, .miembros__zach, .miembros__joe, .miembros__brandon{
+   .miembros__tim, .miembros__zach, .miembros__joe, .miembros__brandon{
         font-size: 2rem;
         padding: 1.25rem;
         overflow: hidden;
@@ -100,18 +59,14 @@
             width: 25rem;
         }
     }
-    
-}
+}  
+
 
 @media screen and (max-width: 768px) {
     html{
         font-size: .5rem;
     }
     .miembros{
-        width: 100%;
-        background-color: map-get($map:$paleta , $key:black);
-        font-family: 'Bebas Neue', cursive;
-        font-size: 1.5rem;
         .miembros__list{
             .miembros__list__li{
                 justify-content: flex-start;

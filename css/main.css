@@ -51,8 +51,8 @@ html {
 }
 
 .footer .footer_link, .footer .bi .bi-facebook, .footer .bi .bi-twitter, .footer .bi .bi-instagram {
-  color: #dadada;
   width: 3rem;
+  color: #dadada;
 }
 
 /*INDEX*/
@@ -314,7 +314,7 @@ html {
   text-align: center;
 }
 
-.historia .historia__banda__tablas .historia__banda_tabla1 {
+.historia .historia__banda__tablas .historia__banda_tabla1, .historia .historia__banda__tablas .historia__banda_tabla2 {
   display: flex;
   grid-area: tabla1;
   justify-content: center;
@@ -322,23 +322,19 @@ html {
   flex-wrap: wrap;
 }
 
-.historia .historia__banda__tablas .historia__banda_tabla1 .tabla__titulo {
+.historia .historia__banda__tablas .historia__banda_tabla1 .tabla__titulo, .historia .historia__banda__tablas .historia__banda_tabla2 .tabla__titulo {
   width: 100%;
   font-size: .6em;
   height: auto;
 }
 
-.historia .historia__banda__tablas .historia__banda_tabla1 .historia__tabla {
+.historia .historia__banda__tablas .historia__banda_tabla1 .historia__tabla, .historia .historia__banda__tablas .historia__banda_tabla2 .historia__tabla {
   font-size: .4em;
   width: 90%;
 }
 
 .historia .historia__banda__tablas .historia__banda_tabla2 {
-  display: flex;
   grid-area: tabla2;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
 }
 
 .historia .historia__banda__tablas .historia__banda_tabla2 .tabla__titulo {
@@ -359,7 +355,7 @@ html {
 }
 
 @media screen and (max-width: 832px) {
-  .historia .historia__banda__tablas {
+  .historia .historia__banda .historia__banda__tablas {
     grid-template-areas: 'tabla1' 'tabla2';
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -417,48 +413,6 @@ html {
   display: inline-block;
 }
 
-.contenedor__miembros .miembros {
-  width: 100%;
-  background-color: #000000;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 1.5rem;
-}
-
-.contenedor__miembros .miembros .miembros__titular {
-  color: #dadada;
-  font-size: 2.6em;
-  display: flex;
-  width: 100%;
-  height: 20%;
-  text-align: center;
-  justify-content: center;
-  padding-top: 1.25rem;
-}
-
-.contenedor__miembros .miembros .miembros__list {
-  font-size: 1.5625em;
-  display: inline;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedor__miembros .miembros .miembros__list .miembros__list__li {
-  display: flex;
-  width: 100%;
-  background-color: #5c5c5c;
-  color: #000000;
-  justify-content: center;
-}
-
-.contenedor__miembros .miembros .miembros__list .miembros__list__li .miembros__it {
-  text-decoration: none;
-  color: #000000;
-  background-color: #dadada;
-  border-radius: 5px;
-  padding: 1px;
-}
-
 .contenedor__miembros .miembros__tim, .contenedor__miembros .miembros__zach, .contenedor__miembros .miembros__joe, .contenedor__miembros .miembros__brandon {
   font-size: 2rem;
   padding: 1.25rem;
@@ -476,12 +430,6 @@ html {
 @media screen and (max-width: 768px) {
   html {
     font-size: .5rem;
-  }
-  .miembros {
-    width: 100%;
-    background-color: #000000;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.5rem;
   }
   .miembros .miembros__list .miembros__list__li {
     justify-content: flex-start;

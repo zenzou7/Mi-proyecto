@@ -56,19 +56,16 @@
                     width: 90%;
                 }
             }
+        
+            .historia__banda_tabla2{
+                @extend .historia__banda_tabla1;
+                grid-area: tabla2;
 
-    .historia__banda_tabla2{
-        display: flex;
-        grid-area: tabla2;
-        justify-content: center;
-        align-items: baseline;
-        flex-wrap: wrap;
-
-    .tabla__titulo{
-        width: 100%;
-        font-size: .6em;
-        height: auto;
-    }
+                .tabla__titulo{
+                width: 100%;
+                font-size: .6em;
+                height: auto;
+            }
     
     .historia__tabla{
         font-size: .4em;
@@ -89,11 +86,6 @@
 @media screen and (max-width: 832px){
     .historia{
         .historia__banda{
-            details{
-                .historia__titulo__articulo{
-                }
-            }
-        }
             .historia__banda__tablas{
                 grid-template-areas: 
                 'tabla1'
@@ -102,9 +94,9 @@
                 grid-template-rows: auto;
                 padding: 30px;
                 gap: 40px;
-        }  
-    }       
+            }  
+        }       
 
+    }
 }
-
 /*FIN HISTORIA*/

@@ -1,5 +1,10 @@
 /*FOOTER*/
 
+@mixin red-social ($col){
+    width: 3rem;
+    color: $col;
+}
+
 .footer{
     display: flex;
     background-color: #303030;
@@ -9,11 +14,10 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     padding: 2px;
     overflow: hidden;
     & .footer_link, .bi .bi-facebook, .bi .bi-twitter, .bi .bi-instagram{
-        color: map-get($map:$paleta , $key:primario);
-        width: 3rem;
+        @include red-social(map-get($map:$paleta , $key:primario))
     }
 }
