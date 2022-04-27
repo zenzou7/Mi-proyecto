@@ -355,7 +355,7 @@ html {
 }
 
 @media screen and (max-width: 832px) {
-  .historia .historia__banda .historia__banda__tablas {
+  .historia .historia__banda__tablas {
     grid-template-areas: 'tabla1' 'tabla2';
     grid-template-columns: 100%;
     grid-template-rows: auto;

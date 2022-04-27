@@ -29,47 +29,47 @@
             }
         }
     }
-        .historia__banda__tablas{
-            width: 100%;
-            display: grid;
-            padding: 1.25rem;
-            grid-template-areas: 'tabla1 tabla2';
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto;
+    .historia__banda__tablas{
+        width: 100%;
+        display: grid;
+        padding: 1.25rem;
+        grid-template-areas: 'tabla1 tabla2';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        text-align: center;
+
+        .historia__banda_tabla1{
+            display: flex;
+            grid-area: tabla1;
             justify-content: center;
-            text-align: center;
+            align-items: baseline;
+            flex-wrap: wrap;
 
-            .historia__banda_tabla1{
-                display: flex;
-                grid-area: tabla1;
-                justify-content: center;
-                align-items: baseline;
-                flex-wrap: wrap;
-
-                .tabla__titulo{
-                    width: 100%;
-                    font-size: .6em;
-                    height: auto;
-                }
-                .historia__tabla{
-                    font-size: .4em;
-                    width: 90%;
-                }
+            .tabla__titulo{
+                width: 100%;
+                font-size: .6em;
+                height: auto;
             }
+            .historia__tabla{
+                font-size: .4em;
+                width: 90%;
+            }
+        }
         
-            .historia__banda_tabla2{
-                @extend .historia__banda_tabla1;
-                grid-area: tabla2;
+        .historia__banda_tabla2{
+            @extend .historia__banda_tabla1;
+            grid-area: tabla2;
 
-                .tabla__titulo{
+            .tabla__titulo{
                 width: 100%;
                 font-size: .6em;
                 height: auto;
             }
     
-    .historia__tabla{
-        font-size: .4em;
-        width: 90%;
+            .historia__tabla{
+                font-size: .4em;
+                width: 90%;
             }
         }
     }
@@ -85,18 +85,15 @@
 
 @media screen and (max-width: 832px){
     .historia{
-        .historia__banda{
-            .historia__banda__tablas{
-                grid-template-areas: 
-                'tabla1'
-                'tabla2';
-                grid-template-columns: 100%;
-                grid-template-rows: auto;
-                padding: 30px;
-                gap: 40px;
-            }  
-        }       
-
+        .historia__banda__tablas{
+            grid-template-areas: 
+            'tabla1'
+            'tabla2'; 
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            padding: 30px;
+            gap: 40px;
+        }  
     }
 }
 /*FIN HISTORIA*/
