@@ -11,14 +11,19 @@
             flex-wrap: wrap;
             padding: 15px;
             box-sizing: border-box;
+            overflow: hidden;
             .main__img{
                 align-items: center;
                 justify-content: center;
                 border-style: solid;
                 border-radius: 10px;
                 border-color: map-get($map:$paleta, $key:secundario);
-                width: 100%;
-                margin: 0px;
+                width: 390px;
+                margin: 5px;
+            }
+            .main__img:hover{
+                transform: scale(1.1);
+                transition: .5s;
             }
         }
         .main__der{

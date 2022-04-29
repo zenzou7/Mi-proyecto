@@ -71,6 +71,7 @@ html {
   flex-wrap: wrap;
   padding: 15px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .container-fluid .row .main__izq .main__img {
@@ -79,8 +80,13 @@ html {
   border-style: solid;
   border-radius: 10px;
   border-color: #5c5c5c;
-  width: 100%;
-  margin: 0px;
+  width: 390px;
+  margin: 5px;
+}
+
+.container-fluid .row .main__izq .main__img:hover {
+  transform: scale(1.1);
+  transition: .5s;
 }
 
 .container-fluid .row .main__der {
