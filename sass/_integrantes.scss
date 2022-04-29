@@ -38,6 +38,9 @@
                 border-radius: 5px;
                 padding: 1px;
             }
+            .miembros__it:hover{
+                color: map-get($map:$paleta , $key:secundario);
+            }
         }
     }
 }
@@ -57,6 +60,9 @@
         }
         .foto__miembro{
             width: 25rem;
+            border-radius: 5px;
+            box-shadow: 5px 5px 1px map-get($map:$paleta , $key:secundario);
+            margin-bottom: 10px;
         }
     }
 }  
