@@ -19,7 +19,6 @@
                 border-radius: 10px;
                 border-color: map-get($map:$paleta, $key:secundario);
                 width: 100%;
-                margin: 5px;
             }
             .main__img:hover{
                 transform: scale(0.9);
