@@ -413,6 +413,10 @@ html {
   padding: 1px;
 }
 
+.miembros .miembros__list .miembros__list__li .miembros__it:hover {
+  color: #5c5c5c;
+}
+
 .contenedor__miembros {
   height: 70rem;
   display: inline-block;
@@ -430,6 +434,9 @@ html {
 
 .contenedor__miembros .miembros__tim .foto__miembro, .contenedor__miembros .miembros__zach .foto__miembro, .contenedor__miembros .miembros__joe .foto__miembro, .contenedor__miembros .miembros__brandon .foto__miembro {
   width: 25rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 1px #5c5c5c;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
