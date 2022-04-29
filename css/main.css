@@ -80,12 +80,12 @@ html {
   border-style: solid;
   border-radius: 10px;
   border-color: #5c5c5c;
-  width: 390px;
+  width: 100%;
   margin: 5px;
 }
 
 .container-fluid .row .main__izq .main__img:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
   transition: .5s;
 }
 
