@@ -453,6 +453,9 @@ html {
     width: 50%;
     justify-content: flex-start;
   }
+  .miembros .miembros__list .miembros__list__li .miembros__it:hover {
+    color: #000000;
+  }
 }
 
 /*FIN INTEGRANTES*/

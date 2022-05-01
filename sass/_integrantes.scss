@@ -83,6 +83,9 @@
                     width: 50%;
                     justify-content: flex-start;
                 }
+                .miembros__it:hover{
+                    color: map-get($map:$paleta , $key:black);
+                }
             }
         }
     }
