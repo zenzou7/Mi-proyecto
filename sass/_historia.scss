@@ -1,8 +1,8 @@
 /*HISTORIA*/
 
 .historia__titular{
-    color: #dadada;
-    background-color: map-get($map:$paleta , $key:secundario);
+    color: black;
+    background-color: map-get($map:$paleta , $key:primario);
     display: flex;
     width: 100%;
     padding: .6em;
@@ -14,9 +14,9 @@
 }
 .historia{
     width: 100%;
-    background-color: map-get($map:$paleta , $key:secundario);
+    background-color: map-get($map:$paleta , $key:primario);
     font-family: 'Bebas Neue', cursive;    
-    color:  map-get($map:$paleta , $key:primario);
+    color:  map-get($map:$paleta , $key:black);
     font-size: 50px;
 
     .historia__banda{

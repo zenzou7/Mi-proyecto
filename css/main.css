@@ -279,8 +279,8 @@ html {
 /*FIN DISCOGRAFIA*/
 /*HISTORIA*/
 .historia__titular {
-  color: #dadada;
-  background-color: #5c5c5c;
+  color: black;
+  background-color: #dadada;
   display: flex;
   width: 100%;
   padding: .6em;
@@ -293,9 +293,9 @@ html {
 
 .historia {
   width: 100%;
-  background-color: #5c5c5c;
+  background-color: #dadada;
   font-family: 'Bebas Neue', cursive;
-  color: #dadada;
+  color: #000000;
   font-size: 50px;
 }
 
