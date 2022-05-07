@@ -507,34 +507,3 @@ html {
 }
 
 /*FIN CONTACTO*/
-.mensaje__container {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.mensaje__container .logo__RA {
-  width: 200px;
-  display: block;
-}
-
-.mensaje__container .titulo {
-  display: block;
-  width: 100%;
-  font-size: 5rem;
-}
-
-.mensaje__container .parrafo {
-  font-size: 3rem;
-}
-
-@media screen and (max-width: 768px) {
-  .mensaje__container .mensaje__container {
-    height: 800px;
-  }
-}
